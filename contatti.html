@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contatti | SEFEM</title>
+  <meta name="description" content="Contatti per informazioni sul libro, richieste di consulenza e confronti operativi.">
+  <meta property="og:title" content="Contatti | SEFEM">
+  <meta property="og:description" content="Contatti per informazioni sul libro, richieste di consulenza e confronti operativi.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f7f5f1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="SEFEM home">SEFEM</a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a class="" href="index.html">Home</a>
+      <a class="" href="attivita.html">Attività</a>
+      <a class="active" href="contatti.html">Contatti</a>
+      <a class="" href="privacy.html">Privacy Policy</a>
+      <a class="" href="cookie.html">Cookie Policy</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> / Contatti</div>
+      <span class="eyebrow">Contatti</span>
+      <h1>Contatti</h1>
+      <p class="lead">
+        Per informazioni sul libro, richieste di consulenza o confronti operativi, scrivi qui.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container contact-wrap">
+      <aside class="card contact-list">
+        <h2>Riferimenti</h2>
+        <ul>
+          <li><strong>Email</strong><br><a href="mailto:contatti@sefem.pro">contatti@sefem.pro</a></li>
+          <li><strong>Libro</strong><br><a href="https://amzn.eu/d/09S7jreb" target="_blank" rel="noopener">Acquista su Amazon</a></li>
+          <li><strong>Nota tecnica</strong><br>In questa versione statica il form apre il client email dell’utente. Per invio automatico server-side serve un endpoint o un servizio esterno.</li>
+        </ul>
+      </aside>
+
+      <div class="card form-card">
+        <form data-contact-form novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Nome</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div class="field full">
+              <label for="company">Azienda</label>
+              <input id="company" name="company" type="text">
+            </div>
+            <div class="field full">
+              <label for="message">Messaggio</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+          </div>
+          <div class="hero-actions spacer-top">
+            <button class="cta" type="submit">Invia messaggio</button>
+          </div>
+          <p class="form-note">
+            Validazione front-end inclusa. Invio automatico email non incluso in HTML statico puro.
+          </p>
+          <div class="form-message" data-form-message></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand">SEFEM</div>
+      <p class="small">Decisioni veloci, regole chiare, meno attrito.</p>
+      <p class="small">Email: <a href="mailto:contatti@sefem.pro">contatti@sefem.pro</a></p>
+    </div>
+    <div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="attivita.html">Attività</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookie.html">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="cookie-banner" data-cookie-banner aria-live="polite" aria-label="Banner cookie">
+  <div class="cookie-inner">
+    <div>
+      <strong>Cookie e analytics</strong>
+      <p class="small" style="color:rgba(255,255,255,.82);margin:8px 0 0">
+        Questo sito è predisposto per Google Analytics. I cookie non necessari devono restare bloccati fino alla scelta dell’utente.
+      </p>
+    </div>
+    <div class="cookie-actions">
+      <button class="cta-secondary" type="button" data-cookie-reject>Rifiuta</button>
+      <button class="cta" type="button" data-cookie-accept>Accetta</button>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
